@@ -1,0 +1,208 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+
+  background-image: linear-gradient(-135deg, #c850c0, #4158d0) !important;
+}
+
+.inner-con {
+  margin-top: 70px;
+
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.login-form {
+  text-align: center;
+}
+
+.head-style {
+  font-size: 24px;
+  color: #333;
+  line-height: 1.2;
+  text-align: center;
+  width: 100%;
+  display: block;
+  padding-bottom: 54px;
+  font-weight: bold;
+}
+.head-style1 {
+  font-size: 15px;
+  color: white;
+
+  line-height: 1.2;
+  text-align: center;
+  width: 100%;
+  display: block;
+
+  font-weight: bold;
+}
+
+.txt2:hover {
+  color: #4fa840 !important;
+}
+
+.input100 {
+  font-family: Poppins-Medium;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #666;
+  display: block;
+  width: 100%;
+  background: #e6e6e6;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  padding: 0 30px 0 68px;
+}
+
+.mybtn {
+  background-color: #4fa840 !important;
+  text-transform: uppercase;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px !important;
+  transition: all 1s;
+}
+
+.mybtn:hover {
+  background-color: black !important;
+}
+
+.txt2 {
+  font-family: Poppins-Regular;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #666;
+  text-decoration: none;
+}
+
+.create-acc {
+  margin-top: 50px;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.img-s {
+  margin-top: 70px;
+}
+
+@media screen and (max-width: 990px) {
+  .img-s {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50% !important;
+    margin-bottom: 50px;
+  }
+  .input100 {
+    width: 400px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mybtn {
+    width: 400px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 422px) {
+  .input100 {
+    width: 330px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mybtn {
+    width: 330px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 352px) {
+  .input100 {
+    width: 280px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mybtn {
+    width: 280px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.hover-img {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.hover-img:hover {
+  transform: scale(1.3) perspective(300px) rotateX(0deg) rotateY(0deg);
+}
+
+.create-acc:hover {
+  transform: scale(1.3) perspective(300px) rotateX(0deg) rotateY(0deg);
+}
+
+.hidden {
+  display: none;
+  color: red;
+}
+
+.hidden2 {
+  display: none;
+  color: red;
+}
+
+.hidden3 {
+  display: none;
+  color: red;
+  font-weight: 500px;
+}
+
+.hidden4 {
+  display: none;
+  color: red;
+  font-weight: 500px;
+}
+
+.my-check {
+  color: #4fa840 !important;
+  font-size: 20px !important;
+}
+.mymodal {
+  display: none;
+  background-color: none !important;
+}
+
+.low-area {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.redir {
+  margin-top: 50px;
+  display: none;
+}
+
+.redirshow {
+  margin-top: 50px;
+  display: block;
+}

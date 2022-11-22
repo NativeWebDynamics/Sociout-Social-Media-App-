@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"
+        integrity="sha512-AFwxAkWdvxRd9qhYYp1qbeRZj6/iTNmJ2GFwcxsMOzwwTaRwz2a/2TX225Ebcj3whXte1WGQb38cXE5j7ZQw3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="../Css/Dashboard.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../Assets/logo.PNG">
+    <script src="../Scripts/Dashboard.js"></script>
+    <script src="../Scripts/Chat.js"></script>
+    <script src="../Scripts/Friend_list.js"></script>
+    <script src="../Scripts/Stories.js"></script>
+    <script src="../Scripts/Hastags.js"></script>
+    <script src="../Scripts/Post.js"></script>
+    <script src="../Scripts/Comments.js"></script>
+    <title>Sociout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="icon" href="../Assets/PngItem_800139.png" type="image/icon type">
+</head>
+
+<body>
+
+
+
+    <div class="container-fluid    bg-white  mt-3  main-container
+    ">
+        <div class="row">
+            <div class="col-lg-3 px-3">
+                <div class="d-flex mt-2">
+                    <i class="fa fa-users head-chat2" aria-hidden="true"></i>
+                    <h1 class="logo-head mx-3 head-chat">Sociout</h1>
+
+
+                </div>
+
+                <div class="user-profile pb-2 pt-5">
+                    <div>
+                        <img class="img2 mb-2" src="../Assets/person_img.jpg" alt="">
+                    </div>
+                    <div class="user-name">
+                        <h4 class="head-chat mt-1">Henry Calvin</h4>
+
+                    </div>
+
+
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
+                            checked />
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Active</label>
+                    </div>
+
+                    <div class="mt-1">
+                        <i class=" fa fa-sign-out head-chat logout" onclick="logout()" aria-hidden="true"></i> Logout
+                    </div>
+                    <button class="btn  " onclick="User_Detail()" popup-open="popup-1" href="javascript:void(0)">
+                        <i class="fas fa-edit head-chat"></i> Edit Login Details</button>
+                </div>
+
+
+
+
+
+                <div class="people mt-3">
+
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item ">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseOne">
+                                    <h5 class="text-center mx-5 head-chat"> <i class="fa-solid fa-user-group mr-2"></i>
+                                        Friend
+                                        List
+                                    </h5>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class=" accordion-collapse collapse show "
+                                aria-labelledby="panelsStayOpen-headingOne">
+                                <div class="accordion-body  ">
+                                    <div class="user-list" id="test2">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+
+                </div>
+
+
+            </div>
+            <div class="col-lg-6 middle-area mt-3 mx-1" id="scroll">
+                <h4 class="text-center head-chat">Stories</h4>
+                <div class="swiper mySwiper mt-3">
+                    <div class="swiper-wrapper mySwiper-area" id="test3">
+
+
+
+
+
+
+
+
+                    </div>
+
+                </div>
+
+                <hr class="line">
+
+
+
+
+                <div class="self-post">
+                    <div class="main-name">
+                        <img src="../Assets/person_img.jpg" class="img2 mb-3" alt="">
+                        <h4 class="head-chat mt-3">Henry Calvin</h4>
+                    </div>
+
+
+
+                    <input class="input100 mb-4 mt-2" type="email" id='Email' name="email" placeholder="
+What's on your mind, Henry Calvin?">
+                </div>
+
+
+                <!-- post options -->
+
+                <div class="main-option">
+                    <div class="option-area">
+                        <i class="fas fa-video mt-1 v-icon"></i>
+                        <h6 class="head-chat">
+                            Live video
+                        </h6>
+                    </div>
+                    <div class="option-area">
+                        <i class="fas fa-photo-video v-icon mt-1"></i>
+                        <h6 class="head-chat">
+                            Photo/Video
+                        </h6>
+                    </div>
+                    <div class="option-area">
+
+                        <i class="fa-solid fa-face-smile v-icon mt-1"></i>
+                        <h6 class="head-chat">
+                            Feeling/Activity
+                        </h6>
+                    </div>
+
+                </div>
+
+
+                <div id="test5">
+                    <div id="testnew">
+
+
+                    </div>
+
+                    <div id="testing">
+
+                    </div>
+                </div>
+
+                <!-- Show more -->
+                <div class="show-more">
+
+                    <h6 class="text-center head-chat show-more" onclick="showmore()">
+                        <i class="fa-solid fa-arrow-down head-chat4"></i>
+                        Show more
+                    </h6>
+                    <div hidden id="spinner"></div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 pb-2 mt-3 mx-2 
+             ">
+                <div class="Hastags">
+                    <h3 class="text-center position-sticky head-chat">#Hastags</h3>
+                    <div class="px-2 hash-area" id="test4">
+
+
+
+
+
+
+
+                    </div>
+
+
+                </div>
+                <div class="accordion mt-4" id="accordionExample">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <h5 class="text-center mx-5 head-chat "> <i class="fas fa-comment-alt   pr-3"></i> Chat
+
+                                </h5>
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="user-list2" id="test">
+                                    <!-- <div class="user-data ">
+
+                                        <img class="img3 mb-2 mx-5" src="../Assets/person_img.jpg" alt="">
+                                        <p class="user-name-1 mt-2  ">Henry Boyd</p>
+                                    </div> -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <div class="popup" popup-name="popup-1">
+        <div class="popup-content">
+            <h4 class="head-chat text-center">Edit User Detail</h4>
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control email" id="name1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control pass" id="pass1">
+                </div>
+
+                <button type="submit" class="btn btn-primary" onclick="edit_data()">Submit</button>
+            </form>
+            <a class="close-button" popup-close="popup-1" href="javascript:void(0)">x</a>
+        </div>
+    </div>
+
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
